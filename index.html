@@ -1,0 +1,244 @@
+// STRUCTURĂ COMPLETĂ PENTRU VERCEL (Next.js Ready)
+//
+// Folder recomandat:
+//
+// servicii-instalatii-bucuresti/
+// ├── app/
+// │   └── page.jsx
+// ├── public/
+// │   ├── favicon.ico
+// │   └── sitemap.xml
+// ├── package.json
+// ├── next.config.js
+// ├── tailwind.config.js
+// ├── postcss.config.js
+// ├── jsconfig.json
+// └── robots.txt
+//
+// package.json recomandat:
+// {
+//   "name": "servicii-instalatii-bucuresti",
+//   "version": "1.0.0",
+//   "private": true,
+//   "scripts": {
+//     "dev": "next dev",
+//     "build": "next build",
+//     "start": "next start"
+//   },
+//   "dependencies": {
+//     "next": "latest",
+//     "react": "latest",
+//     "react-dom": "latest"
+//   }
+// }
+//
+// robots.txt recomandat:
+// User-agent: *
+// Allow: /
+// Sitemap: https://domeniul-tau.ro/sitemap.xml
+//
+// După upload în Vercel:
+// 1. Deploy project
+// 2. Conectare domeniu propriu
+// 3. Google Search Console
+// 4. Google Analytics
+// 5. Indexare Google
+
+export default function ElectricianProLandingPage() {
+  // SEO Meta recomandat:
+  // Title: Electrician București & Ilfov | Servicii Instalații București | Intervenții Rapide
+  // Meta Description: Servicii instalații electrice București și Ilfov pentru verificări electrice, prize, tablouri electrice, siguranțe automate, reparații urgente și intervenții rapide. Programări rapide pe WhatsApp, preț corect și garanție pentru lucrare.
+  // SEO Extra recomandat:
+  // Keywords: electrician București, electrician Ilfov, verificare instalație electrică, tablou electric, prize și întrerupătoare, intervenții electrice urgente
+  // Sitemap: adaugă sitemap.xml pentru indexare rapidă Google
+  // Robots.txt: permite indexarea completă a paginilor
+  // Google Search Console: conectare pentru indexare și monitorizare SEO
+  // Google Analytics: urmărire apeluri și conversii
+  // Local Business Schema: recomandat pentru rezultate mai bune în Google Maps
+  // Open Graph: optimizare pentru distribuire pe WhatsApp și Facebook
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
+      {/* HERO SECTION */}
+      <section className="px-5 py-8 max-w-5xl mx-auto">
+        <div className="bg-yellow-50 border border-yellow-200 rounded-3xl p-6 md:p-10 shadow-sm">
+          <p className="text-sm font-semibold text-yellow-700 mb-2">
+            ⚡ Servicii Instalații București & Ilfov
+          </p>
+
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+            Intervenții Rapide și Verificări Electrice
+          </h1>
+
+          <p className="text-lg md:text-xl mb-4 font-medium">
+            Prize • Tablouri Electrice • Siguranțe • Verificări • Urgențe
+          </p>
+
+          <p className="text-base md:text-lg mb-6 text-gray-700">
+            Răspuns rapid pe WhatsApp • Programări rapide • Preț corect •
+            Fără costuri ascunse
+          </p>
+
+          <div className="bg-white rounded-3xl border p-6 shadow-sm">
+            <h2 className="text-2xl font-bold mb-3">Verificare Instalație Electrică</h2>
+
+            <p className="leading-relaxed mb-5">
+              Ești în siguranță? Verificăm tabloul electric, prizele,
+              întrerupătoarele și continuitatea circuitelor în tot Bucureștiul
+              și județul Ilfov.
+            </p>
+
+            <div className="grid gap-3 md:grid-cols-2">
+              <a
+                href="tel:0761752947"
+                className="text-center bg-yellow-400 hover:bg-yellow-300 transition rounded-2xl py-4 font-bold text-lg shadow"
+              >
+                SUNĂ ACUM: 0761 752 947
+              </a>
+
+              <a
+                href="https://wa.me/40761752947"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center bg-green-500 hover:bg-green-600 text-white transition rounded-2xl py-4 font-bold text-lg shadow"
+              >
+                Trimite poză pe WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="px-5 py-8 max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          De ce să ne alegi?
+        </h2>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {[
+            "Intervenții rapide în București & Ilfov",
+            "Preț stabilit înainte de lucrare",
+            "Fără costuri ascunse",
+            "Disponibil inclusiv seara și weekend",
+            "Programări rapide pe WhatsApp",
+            "Garanție pentru intervenții",
+            "Verificare atentă și soluții sigure",
+            "Recomandări reale de la clienți",
+          ].map((item, index) => (
+            <div key={index} className="border rounded-2xl p-4 shadow-sm">
+              ✔ {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="px-5 py-8 max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          Servicii oferite
+        </h2>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {[
+            "Verificare instalație electrică",
+            "Diagnosticare tablou electric",
+            "Înlocuire prize și întrerupătoare",
+            "Remediere scurtcircuite",
+            "Montaj corpuri de iluminat",
+            "Mentenanță preventivă",
+            "Intervenții urgente",
+            "Verificări pentru apartamente vechi",
+          ].map((service, index) => (
+            <div key={index} className="border rounded-2xl p-5 shadow-sm">
+              <h3 className="font-semibold text-lg">{service}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* GUARANTEE */}
+      <section className="px-5 py-8 max-w-5xl mx-auto">
+        <div className="bg-gray-50 border rounded-3xl p-6 md:p-8 shadow-sm">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5">
+            Garanția Servicii Instalații București
+          </h2>
+
+          <div className="grid gap-4">
+            <p>✔ Garanție pentru lucrare – revenim dacă problema reapare în perioada stabilită</p>
+            <p>✔ Preț clar stabilit înainte – fără surprize după finalizarea lucrării</p>
+            <p>✔ Materiale de calitate – folosim componente sigure și durabile</p>
+            <p>✔ Intervenție serioasă – verificăm cauza reală, nu doar efectul</p>
+            <p>✔ Suport rapid pe WhatsApp pentru programări și întrebări</p>
+          </div>
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      {/* FAQ SEO */}
+      <section className="px-5 py-8 max-w-5xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          Întrebări frecvente
+        </h2>
+
+        <div className="grid gap-4">
+          <div className="border rounded-2xl p-5 shadow-sm">
+            <h3 className="font-bold mb-2">Cât costă o verificare electrică?</h3>
+            <p>Prețul diferă în funcție de lucrare, însă stabilim costul înainte de intervenție, fără surprize ulterioare.</p>
+          </div>
+
+          <div className="border rounded-2xl p-5 shadow-sm">
+            <h3 className="font-bold mb-2">Lucrați și în weekend?</h3>
+            <p>Da, oferim programări rapide inclusiv seara și în weekend pentru urgențe și intervenții importante.</p>
+          </div>
+
+          <div className="border rounded-2xl p-5 shadow-sm">
+            <h3 className="font-bold mb-2">Lucrați și în județul Ilfov?</h3>
+            <p>Da, acoperim București și majoritatea zonelor din Ilfov pentru intervenții rapide și verificări electrice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-5 py-8 max-w-5xl mx-auto pb-32">
+        <div className="border rounded-3xl p-6 shadow-sm bg-white">
+          <h2 className="text-2xl font-bold mb-4">Recenzii Clienți</h2>
+
+          <p className="mb-4 text-gray-700 italic">
+            ⭐ 4,9/5 din 70+ recenzii reale pe Google Business
+          </p>
+
+          <p className="font-semibold mb-3">
+            Clienții ne recomandă pentru promptitudine, seriozitate și intervenții rapide în București și Ilfov.
+          </p>
+
+          <p className="font-semibold text-blue-600 underline mb-3">
+            Vezi profilul pe Google Maps și toate recenziile clienților
+          </p>
+
+          <p className="font-bold text-lg">
+            0761 752 947 – Servicii Instalații București & Ilfov
+          </p>
+        </div>
+      </section>
+
+      {/* FLOATING BUTTONS */}
+      <div className="fixed bottom-5 right-5 flex flex-col gap-3 z-50">
+        <a
+          href="https://wa.me/40761752947"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white px-5 py-4 rounded-full shadow-xl font-bold text-sm"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="tel:0761752947"
+          className="bg-yellow-400 hover:bg-yellow-300 text-black px-5 py-4 rounded-full shadow-xl font-bold text-sm"
+        >
+          Sună Acum
+        </a>
+      </div>
+    </div>
+  );
+}
